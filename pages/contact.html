@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact </title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- D&B NAVBAR -->
+    <script src="../js/navbar.js"></script>
+    <br>
+    <!-- D&B FORM -->
+    <form>
+        <h3 class="subTitle" > Book a Table with us </h3><br>
+        <label for="firstname"> First Name *</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" minlength="3" maxlength="20" required>
+        <label for="lastname"> Last Name </label>
+        <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" minlength="3" maxlength="20">
+        <label for="phone"> Phone Number *</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone number" title="The phone number should be exactly 10 characters long" pattern="[1-9]{1}[0-9]{9}" maxlength="10" required>
+        <label for="youremail"> Email Address *</label>
+        <input type="email" name="youremail" placeholder="Enter your email" required><br>
+        <label for="yourpassword"> Password *</label>
+        <input type="password" name="yourpassword" placeholder="Enter your Password" ><br>
+        <label for="confirmpassword"> Confirm Password *</label>
+        <input type="password" name="confirmpassword" placeholder="Confirm your Password"><br>
+    
+        <label>How would you like us to contact you? </label><br><br>
+          <input type="radio" name="radioOption" value="radio1"> Phone
+          <input type="radio" name="radioOption" value="radio1"> Email <br><br>
+    
+        <label for="dropdown">Your desired place:</label>
+            <select id="dropdown" name="dropdown">
+            <option value="option1">Dublin</option>
+            <option value="option2">Cork</option>
+            <option value="option2">Galway</option>
+            </select>
+        <label for="bio"> Do you want to leave us any addtional comments? </label>
+        <textarea id="bio" name="bio" rows="4" cols="79"></textarea><br>
+        <input type="checkbox" name="checkboxOption" value="checkbox1"> I agree to your T&C <br>
+        <input type="checkbox" name="checkboxOption" value="checkbox2"> I want to subscribe to your montly newsletter <br><br>
+        <input type="image" src="../img/logo.png" alt="Submit" onclick="showCoordinates(event)">
+    </form><br>
+    <!-- D&B FOOTER -->
+    <script src="../js/footer.js"></script>
+</body>
+</html>

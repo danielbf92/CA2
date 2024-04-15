@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> D&B Restaurant </title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- D&B NAVBAR -->
+    <nav class="navbar">
+        <!-- D&B LOGO -->
+        <div>
+            <a href="./index.html">
+                <img class="logo" src="./img/logo.png" alt="logo">
+            </a>
+        </div>
+        <ul class="nav-list" id="navlist">
+            <li class="list-item">
+                <a href="./index.html"> Home </a>
+            </li>
+            <li class="list-item">
+                <a href="pages/gallery.html"> Gallery </a>
+            </li>
+            <li class="list-item">
+                <a href="pages/about.html"> About </a>
+            </li>
+            <li class="list-item">
+                <a href="pages/contact.html"> Contact </a>
+            </li>
+            <li class="list-item">
+                <a href="pages/pathership.html"> Partnership </a>
+            </li>
+            <li class="list-item">
+                <a href="pages/reviews.html"> Reviews </a>
+            </li>
+        </ul>
+        <div class="menu" id="toggleButton">
+            <div class="menu-burger"></div>
+            <div class="menu-burger"></div>
+            <div class="menu-burger"></div>
+        </div>
+    </nav><br>
+    <h2> Welcome to the most incredible food experience </h2><br>
+    <h3 class="subTitle"> Explore our restaurant guide to Ireland </h3><br>
+    <img class="imageHome" src="./img/rustic_main.jpg" alt="rustic"><br>
+    <p>
+        The Rustic is in the business of making everyone feel special. The cosy installation with delicious Irish food where guests come first and we make sure they’ll come back for more. Our Cultural Beliefs bring that passion to life and shape who we are as a company and as the people who live and breathe inside of it. That is why we offer different service where everyone can be part of the experience. We’re more than mere transactions – we’re people and that’s how we create memorable experiences and real results.
+    </p><br>
+    <h3 class="h3Font"> Find out our services </h3><br>
+    <!-- D&B TABLE -->
+    <table id="customer">
+        <tr>
+            <th>Events</th>
+            <th>Location</th>
+            <th>Contact</th>
+        </tr>
+        <tr>
+            <td>Corporative</td>
+            <td>Galway</td>
+            <td>Daniel Brenes</td>
+        </tr>
+        <tr>
+            <td>Birthdays</td>
+            <td>Dublin</td>
+            <td>Eilen McLernon</td>
+        </tr>
+        <tr>
+            <td>Scoolar Parties</td>
+            <td>Cork</td>
+            <td>Noel Doolan</td>
+        </tr>
+        <tr>
+            <td>Baby Shower</td>
+            <td>Limerick</td>
+            <td>Patrick Ryan</td>
+        </tr>
+    </table> <br>
+    <!-- D&B FOOTER -->
+    <script src="./js/footer.js"></script>
+</body>
+
+<script>
+    var toggleButton = document.getElementById('toggleButton');
+    var navList = document.getElementById('navlist');
+
+    toggleButton.addEventListener('click', () =>{
+        navList.classList.toggle('active');
+    })
+</script>
+
+</html>
