@@ -470,25 +470,28 @@ body{
 }
 	
 /* About_us Styling starts here  */
+/* About_us Styling starts here  */
 	
-.team-member {
-    text-align: center;
-    margin-bottom: 30px;
+.meethead{
+	text-align:center;
+}
+.card{
+	text-align:justify;
+	font-size:13.5pt;
+	
+}
+.card-titleposition{
+	font-size:14.5pt;
+	color:#35250D;
+	font-family: "Cinzel", serif;
+	font-optical-sizing: auto;
+	text-align:left;
+	font-style: bold;
+}
+.text-body-secondary{
+	font-size:10pt;
+	color:#35250D;
 }
 
-.team-member img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 15px;
-}
-.team-member h3 {
-    margin-bottom: 5px;
-}
-.team-member p {
-    font-size: 14px;
-    color: #666;
-}
-
+/* Regina  */
 /* Regina  */
