@@ -204,7 +204,35 @@ form {
 
 
     
-/* Regina  */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.card{
+	background-color:#fff2e6;
+	color:#463E39;
+	font-family: "Playfair Display", serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+	padding-right:20px;
+	padding-left:20px;
+  
+}
+.card-text{
+	color:#8B5D27;
+	text-align:left;
+	font-style:bold;
+}
+.card-title{
+	
+	font-size:36px;
+}
+
  .carousel-control-prev-icon {
 	color:black;
      
@@ -241,6 +269,7 @@ body{
     background-color:#ECAA94;
 }
 	
+/* About_us Styling starts here  */
 	
 .team-member {
     text-align: center;
