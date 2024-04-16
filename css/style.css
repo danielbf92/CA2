@@ -417,7 +417,7 @@ form {
 	color:#463E39;
 	font-family: "Playfair Display", serif;
 	font-optical-sizing: auto;
-	font-weight: <weight>;
+	font-weight: weight;
 	font-style: normal;
 	padding-right:20px;
 	padding-left:20px;
