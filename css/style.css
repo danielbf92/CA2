@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
-body { 
-    background-image: url('../img/backform.jpg');
+.contact-body {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: bold;
+    background-color:#ECAA94;
 }
 
 /* Personalized blackground color in Restaurant page */
@@ -103,17 +107,10 @@ h2, .h3Font {
 }
 
 p {
-    p {
-   
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-}
-
-.subTitle {
-    color: #cfe19d;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
 h2, h3, p {
@@ -128,95 +125,6 @@ h2, h3, p {
 /* Hide the images by default */
 .mySlides {
     display: none;
-}
-
-/* Style hover Imgs */
-.mySlides img {
-    transition: 1s ease;
-}
-    
-.mySlides img:hover{
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-    transition: 1s ease;
-}
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-  
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: #ffc93c;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-  
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-  
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-  
-/* Caption text */
-.text {
-    color: #ffc93c;
-    font-size: 25px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-  
-/* Number text (1/4 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 25px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-  
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #ffc93c;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-  
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-  
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
 }
 
 footer {
@@ -238,65 +146,6 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: black;
     text-align: center;
-}
-
-/* Select to put style in differents inputs */
-select,
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    border: 1px solid #90a4ae;
-    border-radius: 5px;
-    background-color: #cfe19d;
-    color: #37474f;
-}
-
-/* Button style */
-button {
-    background-color: #cfe19d;
-    color: #ffffff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #cfe19d;
-}
-
-input[type="radio"] {
-    margin-right: 5px;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-    margin-bottom: 10px;
-    color: #757575;
-}
-
-input[type="radio"]:checked,
-input[type="checkbox"]:checked {
-    color: #ffffff;
-    background-color: #4caf50;
-}
-
-input[type="radio"]:checked + label,
-input[type="checkbox"]:checked + label {
-    font-weight: bold;
-}
-input[type="image"] {
-    height: 45px;
-    text-align: center;
-}
-
-textarea {
-    max-width: 100%;
 }
 
 /* Responsive style */
