@@ -148,6 +148,13 @@ form {
     text-align: center;
 }
 
+label.error {
+  font-weight: 700;
+  display: block;
+  color: #f00;
+  font-size: 14px;
+}
+
 /* Responsive style */
 
 @media only screen and (max-width:480px){

@@ -6,10 +6,9 @@
     <title> Contact </title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/x-icon" href="../images/minilogo.png"> <!--code for customizing icon on the browser tab -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
@@ -26,20 +25,20 @@
             </div>
             <div class="row justify-content-center my-5">
                 <div class="col-lg-6">
-                    <form>
+                    <form id="myForm">
                         <label for="email" class="form-label"> Email Address:</label>
                         <div class="input-group mb-3">
                             <span class="input-group-text">
                                 <i class="bi bi-envelope-fill"></i>
                             </span>
-                            <input type="email" class="form-control" id="email" placeholder="e.g daniel@gmail.com">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="e.g daniel@gmail.com" required>
                         </div>
                         <label for="name" class="form-label"> Name:</label>
                         <div class="input-group mb-3">
                             <span class="input-group-text">
                                 <i class="bi bi-person-raised-hand"></i>
                             </span>
-                            <input type="text" class="form-control" id="name" placeholder="e.g Daniel">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="e.g Daniel" required>
                         </div>
                         <label for="subject" class="form-label"> What is your question about?</label>
                         <div class="input-group mb-3">
@@ -53,11 +52,11 @@
                             </select>
                         </div>
                         <div class="form-floating mb-4 mt-5">
-                            <textarea id="query" class="form-control" style="height: 140px"></textarea>
+                            <textarea id="query" class="form-control" style="height: 140px" name="query" ></textarea>
                             <label for="query" class="form-label"> Your query...</label>
                         </div>
                         <div class="mb-4 text-center">
-                            <button type="submit" class="btn btn-secondary">
+                            <button type="submit" name="submit" class="btn btn-secondary" value="Submit">
                                 Submit
                             </button>
                         </div>
@@ -67,6 +66,8 @@
         </div>
     </section>
     <br>
+    <!-- Including validation.js jQuery Script -->
+    <script src="../js/validation.js"></script> 
     <!-- D&B FOOTER -->
     <script src="../js/footer.js"></script>
 </body>
