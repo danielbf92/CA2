@@ -505,5 +505,46 @@ body{
 	color:#35250D;
 }
 
+/*Regina About_us Styling starts here  */
+/* Regina Meet the team section  */	
+.meethead{
+	text-align:center;
+}
+.card{
+	text-align:justify;
+	font-size:13.5pt;
+	
+}
+.card-titleposition{
+	font-size:14.5pt;
+	color:#35250D;
+	font-family: "Cinzel", serif;
+	font-optical-sizing: auto;
+	text-align:left;
+	font-style: bold;
+}
+.text-body-secondary{
+	font-size:10pt;
+	color:#35250D;
+}
+
+.col-12{
+	background:rgba(236, 170, 148, 0.3)!important;
+}
+
+/* Regina Meet the team section ends */
+
+/* Regina Mision and vision section starts here */	
+.py-3 {
+		background-image:url("../images/BackgroundGeneral.jpg");
+		  background-size: auto; 
+}
+.text-secondary {
+color:#35250D;
+	
+}
+
+/* Regina Mision and vision section e here */	
+
 /* Regina  */
 /* Regina  */
