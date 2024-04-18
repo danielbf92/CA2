@@ -4,15 +4,25 @@
     box-sizing: border-box;
 }
 
+/* Daniel CSS Start */
+
 body { 
-    background-image: url('../img/backform.jpg');
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
-/* Personalized blackground color in Restaurant page */
+.bodyHome {
+  background-image: url("../images/back.jpg");
+}
 
-.restaBody {
-    background-image: none;
-    background-color: black;
+.contact-body {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: bold;
+    background-color:#ECAA94;
 }
 
 /* Navbar style */
@@ -20,9 +30,12 @@ body {
     /*background-color: #10898d;*/
     color: #032f3c;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-around !important;
+    align-items: center !important;
     font-size: 20px;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: bold;
 }
 
 .logo {
@@ -44,7 +57,7 @@ body {
 }
 
 .navbar a:hover {
-    color: #84ac0c;
+    color: white;
 }
 
 .menu {
@@ -56,6 +69,43 @@ body {
     height: 3px;
     background-color: white;
     margin-bottom: 4px;
+}
+
+.titleHome {
+    font-family: "Yellowtail", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #f2845f;
+}
+
+.imageHome {
+  --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+  --m:
+    left   var(--_i,0%) top    var(--_g),
+    bottom var(--_i,0%) left   var(--_g),
+    top    var(--_i,0%) right  var(--_g),
+    right  var(--_i,0%) bottom var(--_g);
+  -webkit-mask: var(--m);
+          mask: var(--m);
+  filter: grayscale();
+  transition: .3s linear;
+  cursor: pointer;
+}
+.imageHome:hover {
+  --_i: 10%;
+  filter: grayscale(0);
+}
+
+.rowHome {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+}
+
+.columnHome {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 20px;
 }
 
 .imageHome{
@@ -85,7 +135,7 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #10898d;
+    background-color: #fff2e6;
     color: black;
 }
 
@@ -103,14 +153,10 @@ h2, .h3Font {
 }
 
 p {
-    font-family: "Genos", sans-serif;
+    font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: weight;
     font-style: normal;
-}
-
-.subTitle {
-    color: #cfe19d;
 }
 
 h2, h3, p {
@@ -120,100 +166,6 @@ h2, h3, p {
 
 .container {
     padding: 2rem;
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
-
-/* Style hover Imgs */
-.mySlides img {
-    transition: 1s ease;
-}
-    
-.mySlides img:hover{
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-    transition: 1s ease;
-}
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-  
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: #ffc93c;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-  
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-  
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-  
-/* Caption text */
-.text {
-    color: #ffc93c;
-    font-size: 25px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-  
-/* Number text (1/4 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 25px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-  
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #ffc93c;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-  
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-  
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
 }
 
 footer {
@@ -230,70 +182,18 @@ form {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #fff2e6;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: black;
     text-align: center;
 }
 
-/* Select to put style in differents inputs */
-select,
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    border: 1px solid #90a4ae;
-    border-radius: 5px;
-    background-color: #cfe19d;
-    color: #37474f;
-}
-
-/* Button style */
-button {
-    background-color: #cfe19d;
-    color: #ffffff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #cfe19d;
-}
-
-input[type="radio"] {
-    margin-right: 5px;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-    margin-bottom: 10px;
-    color: #757575;
-}
-
-input[type="radio"]:checked,
-input[type="checkbox"]:checked {
-    color: #ffffff;
-    background-color: #4caf50;
-}
-
-input[type="radio"]:checked + label,
-input[type="checkbox"]:checked + label {
-    font-weight: bold;
-}
-input[type="image"] {
-    height: 45px;
-    text-align: center;
-}
-
-textarea {
-    max-width: 100%;
+label.error {
+  font-weight: 700;
+  display: block;
+  color: #f00;
+  font-size: 14px;
 }
 
 /* Responsive style */
@@ -313,7 +213,6 @@ textarea {
         position: absolute;
         right: 15px;
         top: 15px;
-        background-color: #4caf50;
     }
 
     .nav-list {
@@ -327,7 +226,6 @@ textarea {
     .nav-list .list-item {
         display: block;
         border-top: 1px solid black;
-        background-color: #cfe19d;
     }
 
     .logo {
@@ -345,9 +243,253 @@ textarea {
     .prev, .next,.text {font-size: 11px}
 }
 
+.p-game {
+  color: black;
+}
+
+::selection{
+    color: #fff;
+    background:#ECAA94;
+}
+
+.select-box, .play-board, .result-box{
+    position: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+.select-box{
+    background: #fff2e6;
+    padding: 20px 25px 25px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+}
+  .select-box.hide{
+    opacity: 0;
+    pointer-events: none;
+  }
+  .select-box header{
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgrey;
+  }
+  .select-box .title{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 20px 0;
+  }
+  .select-box .options{
+    display: flex;
+    width: 100%;
+  }
+  .options button{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0;
+    border: none;
+    background: #ECAA94;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .options button:hover,
+  .btn button:hover{
+    transform: scale(0.96);
+  }
+  .options button.playerX{
+    margin-right: 5px;
+  }
+  .options button.playerO{
+    margin-left: 5px;
+  }
+  .select-box .credit{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .select-box .credit a{
+    color: #ECAA94;
+    text-decoration: none;
+  }
+  .select-box .credit a:hover{
+    text-decoration: underline;
+  }
+  .play-board{
+    opacity: 0;
+    pointer-events: none;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .play-board.show{
+    opacity: 1;
+    pointer-events: auto;
+    width: 50%;
+    margin: 0 auto;
+    
+  }
+  .play-board .details{
+    padding: 7px;
+    border-radius: 5px;
+    background: #fff2e6;
+  }
+  .play-board .players{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+  }
+  .players span{
+    position: relative;
+    z-index: 2;
+    color: #ECAA94;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    cursor: default;
+    user-select: none;
+    transition: all 0.3 ease;
+  }
+  .players.active span:first-child{
+    color: #fff;
+  }
+  .players.active span:last-child{
+    color: #ECAA94;
+  }
+  .players span:first-child{
+    color: #fff;
+  }
+  .players .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #ECAA94;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .players.active .slider{
+    left: 50%;
+  }
+  .players.active span:first-child{
+    color: #ECAA94;
+  }
+  .players.active span:nth-child(2){
+    color: #fff;
+  }
+  .players.active .slider{
+    left: 50%;
+  }
+  .play-area{
+    margin-top: 20px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .play-area section{
+    display: flex;
+    margin-bottom: 1px;
+  }
+  .play-area section span{
+    display: block;
+    height: 90px;
+    width: 90px;
+    margin: 2px;
+    color: #ECAA94;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 5px;
+    background: #fff2e6;
+  }
+  .result-box{
+    padding: 25px 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+    opacity: 0;
+    margin-left: 50%;
+    text-align: center;
+    background: #fff2e6;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  .result-box.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    margin-left: 50%;
+  }
+  .result-box .won-text{
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+  }
+  .result-box .won-text p{
+    font-weight: 600;
+    margin: 0 5px;
+  }
+  .result-box .btn{
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+  }
+  .btn button{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 20px;
+    border: none;
+    background: #ECAA94;
+    border-radius: 5px;
+    color: #fff2e6;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+/* END Daniel CSS */
+
 
     
-/* Regina  */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.card{
+	background-color:#fff2e6;
+	color:#463E39;
+	font-family: "Playfair Display", serif;
+	font-optical-sizing: auto;
+	font-weight: weight;
+	font-style: normal;
+	padding-right:20px;
+	padding-left:20px;
+  
+}
+.card-text{
+	color:#8B5D27;
+	text-align:left;
+	font-style:bold;
+}
+.card-title{
+	
+	font-size:36px;
+}
+
  .carousel-control-prev-icon {
 	color:black;
      
@@ -384,25 +526,182 @@ body{
     background-color:#ECAA94;
 }
 	
+/* About_us Styling starts here  */
+/* About_us Styling starts here  */
 	
-.team-member {
-    text-align: center;
-    margin-bottom: 30px;
+.meethead{
+	text-align:center;
+}
+.card{
+	text-align:justify;
+	font-size:13.5pt;
+	
+}
+.card-titleposition{
+	font-size:14.5pt;
+	color:#35250D;
+	font-family: "Cinzel", serif;
+	font-optical-sizing: auto;
+	text-align:left;
+	font-style: bold;
+}
+.text-body-secondary{
+	font-size:10pt;
+	color:#35250D;
 }
 
-.team-member img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 15px;
+/*Regina About_us Styling starts here  */
+/* Regina Meet the team section  */	
+.meethead{
+	text-align:center;
 }
-.team-member h3 {
-    margin-bottom: 5px;
+.card{
+	text-align:justify;
+	font-size:13.5pt;
+	
 }
-.team-member p {
-    font-size: 14px;
-    color: #666;
+.card-titleposition{
+	font-size:14.5pt;
+	color:#35250D;
+	font-family: "Cinzel", serif;
+	font-optical-sizing: auto;
+	text-align:left;
+	font-style: bold;
 }
+.text-body-secondary{
+	font-size:10pt;
+	color:#35250D;
+}
+
+.col-12{
+	background:rgba(236, 170, 148, 0.3)!important;
+}
+
+/* Regina Meet the team section ends */
+
+/* Regina Mision and vision section starts here */	
+.py-3 {
+		background-image:url("../images/BackgroundGeneral.jpg");
+		  background-size: auto; 
+}
+.text-secondary {
+color:#35250D;
+	
+}
+
+/* Regina Mision and vision section e here */	
 
 /* Regina  */
+/* Regina  */
+
+/*gallery*/
+.gallery-container{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #fff;
+	width: 94%;
+	padding: 10px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+	margin: 0px auto;
+}
+
+.gallery-item{
+	flex-basis: 32.7%;
+	margin-bottom: 6px;
+	opacity: 0.85;
+	cursor: pointer;
+}
+
+.gallery-item:hover{
+	opacity:1;
+}
+
+.gallery-item img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/*lightbox*/
+.lightbox{
+	position: fixed;
+	display: none;
+	background-color: rgba(0,0,0,0.6);
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	top: 0;
+	left: 0;
+}
+
+.lightbox p{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.lightbox-content{
+	position: relative;
+	width:65%;
+	height: 58%;
+	margin: 5% auto;
+	margin-top: 100px;
+}
+
+.lightbox-content img{
+	width:100%;
+	height: 100%;
+	border: 6px solid #fff;
+	object-fit: cover;
+}
+
+.lightbox-prev, .lightbox-next{
+	position: absolute;
+	background-color: rgba(0,0,0,0.8);
+	color: #fff;
+	padding: 9px;
+	top: 45%;
+	cursor: pointer;
+}
+
+.lightbox-prev{
+	left: 0;
+}
+
+.lightbox-next{
+	right: 0;
+}
+
+/*make it responsive*/
+@media(max-width: 767px){
+	.gallery-container{
+		width:100%;
+	}
+	.gallery-item{
+		flex-basis: 49.80%;
+		margin-bottom: 3px;
+	}
+	.lightbox-content{
+		width:80%;
+		height:60%;
+		margin:15% auto;
+	}
+}
+
+@media(max-width: 480px){
+	.gallery-item{
+		flex-basis: 100%;
+		margin-bottom: 1px;
+	}
+	.lightbox-content{
+		width:90%;
+		margin:20px auto;
+	}
+}
