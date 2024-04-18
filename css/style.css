@@ -94,7 +94,7 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #10898d;
+    background-color: #fff2e6;
     color: black;
 }
 
@@ -141,7 +141,7 @@ form {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #fff2e6;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: black;
@@ -202,6 +202,10 @@ label.error {
     .prev, .next,.text {font-size: 11px}
 }
 
+.p-game {
+  color: black;
+}
+
 ::selection{
     color: #fff;
     background:#ECAA94;
@@ -215,7 +219,7 @@ label.error {
     justify-content: center;
 }
 .select-box{
-    background: #fff;
+    background: #fff2e6;
     padding: 20px 25px 25px;
     border-radius: 5px;
     max-width: 400px;
@@ -292,7 +296,7 @@ label.error {
   .play-board .details{
     padding: 7px;
     border-radius: 5px;
-    background: #fff;
+    background: #fff2e6;
   }
   .play-board .players{
     width: 100%;
@@ -363,7 +367,7 @@ label.error {
     line-height: 80px;
     text-align: center;
     border-radius: 5px;
-    background: #fff;
+    background: #fff2e6;
   }
   .result-box{
     padding: 25px 20px;
@@ -373,7 +377,7 @@ label.error {
     opacity: 0;
     margin-left: 50%;
     text-align: center;
-    background: #fff;
+    background: #fff2e6;
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
   }
@@ -406,7 +410,7 @@ label.error {
     border: none;
     background: #ECAA94;
     border-radius: 5px;
-    color: #fff;
+    color: #fff2e6;
     outline: none;
     cursor: pointer;
     transition: all 0.3s ease;
