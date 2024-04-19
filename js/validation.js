@@ -27,10 +27,12 @@ $("#myForm").validate({
     },
 
     submitHandler: function(form) {
-        openPopup();
-        setTimeout(function(){
-            $("#popup").fadeOut();
-            form.submit();
-        }, 4000);
+        if($(form).valid()) {
+            openPopup();
+            setTimeout(function(){
+                $("#popup").fadeOut();
+                form.submit();
+            }, 4000);
+        }
     }
 });
