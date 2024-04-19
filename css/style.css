@@ -631,6 +631,21 @@ body{
 }
 
 /* Regina Meet the team section ends */
+/* Regina Home Cards styling Starts Here */
+
+
+.btn-light{
+	text-decoration: none;
+	
+}
+.packagesdescriptions{
+	padding-left:122px;
+}
+
+.Stepstobeourclient{
+	padding-left:120px;
+}
+/* Regina Home Cards styling Starts Here */
 
 /* Regina Mision and vision section starts here */	
 .py-3 {
@@ -642,11 +657,12 @@ color:#35250D;
 	
 }
 
-/* Regina Mision and vision section e here */	
+/* Regina Mision and vision section ends here */	
+
 
 /* Regina  */
-/* Regina  */
 
+/*gallery*/
 /*gallery*/
 .gallery-container{
 	display: flex;
