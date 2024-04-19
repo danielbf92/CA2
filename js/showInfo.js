@@ -1,8 +1,8 @@
-function showInfo() {
-    var text = document.getElementById("textField");
-    if (text.style.display === "none") {
-      text.style.display = "block";
-    } else {
-      text.style.display = "none";
-    }
+function showInfo(id) {
+  var element = document.getElementById(id);
+  if (element.style.display === "none") {
+      element.style.display = "block";
+  } else {
+      element.style.display = "none";
+  }
 }
