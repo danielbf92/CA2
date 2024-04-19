@@ -1,3 +1,12 @@
+let popup = document.getElementById("popup");
+
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
 $("#myForm").validate({
 
     rules:{
@@ -18,6 +27,10 @@ $("#myForm").validate({
     },
 
     submitHandler: function(form) {
-      form.submit();
+        openPopup();
+        setTimeout(function(){
+            $("#popup").fadeOut();
+            form.submit();
+        }, 4000);
     }
 });
