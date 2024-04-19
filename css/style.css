@@ -472,6 +472,16 @@ label.error {
   'GRAD' 0,
   'opsz' 24
 }
+/*Regina*/
+
+    
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
 
 .card{
 	background-color:#fff2e6;
@@ -529,9 +539,7 @@ body{
     font-style: bold;
     background-color:#ECAA94;
 }
-	
-/* About_us Styling starts here  */
-/* About_us Styling starts here  */
+
 	
 .meethead{
 	text-align:center;
@@ -554,8 +562,7 @@ body{
 	color:#35250D;
 }
 
-/*Regina About_us Styling starts here  */
-/* Regina Meet the team section  */	
+
 .meethead{
 	text-align:center;
 }
@@ -571,6 +578,11 @@ body{
 	font-optical-sizing: auto;
 	text-align:left;
 	font-style: bold;
+	  position: relative;
+    width: 100%;
+    max-width: 1000px; /* Set maximum width */
+    margin: 0 auto; 
+	
 }
 .text-body-secondary{
 	font-size:10pt;
@@ -581,8 +593,6 @@ body{
 	background:rgba(236, 170, 148, 0.3)!important;
 }
 
-/* Regina Meet the team section ends */
-/* Regina Home Cards styling Starts Here */
 
 
 .btn-light{
@@ -590,15 +600,13 @@ body{
 	
 }
 .packagesdescriptions{
-	padding-left:122px;
+	padding-left:10px;
 }
 
 .Stepstobeourclient{
-	padding-left:120px;
+	padding-left:100px;
 }
-/* Regina Home Cards styling Starts Here */
-
-/* Regina Mision and vision section starts here */	
+	
 .py-3 {
 		background-image:url("../images/BackgroundGeneral.jpg");
 		  background-size: auto; 
@@ -608,9 +616,66 @@ color:#35250D;
 	
 }
 
-/* Regina Mision and vision section e here */	
 
-/* Regina  */
+.banner{
+	padding-left:130px;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    max-width: 1000px; /* Set maximum width */
+    margin: 0 auto; /* Center the banner */
+}
+.th{
+    position: relative;
+    width: 100%;
+    max-width: 1000px; /* Set maximum width */
+    margin: 0 auto; /* Center the banner */
+}
+.overviewwedding{
+	font-size:14.5pt;
+	color:#35250D;
+	font-family: "Playfair", serif;
+	font-optical-sizing: auto;
+	text-align:left;
+	font-style: bold;
+}
+.titlehome{
+	font-size:14.5pt;
+	color:#35250D;
+	font-family: "Playfair", serif;
+	font-optical-sizing: auto;
+	text-align:left;
+	font-style: bold;
+}
+
+
+
+/*make it responsive*/
+@media(max-width: 767px){
+	.gallery-container{
+		width:100%;
+	}
+	.gallery-item{
+		flex-basis: 49.80%;
+		margin-bottom: 3px;
+	}
+	.lightbox-content{
+		width:80%;
+		height:60%;
+		margin:15% auto;
+	}
+}
+
+@media(max-width: 480px){
+	.card-body {
+		flex-basis: 100%;
+		margin-bottom: 1px;
+	}
+	.card-body{
+		width:90%;
+		margin:20px auto;
+	}
 /* Regina  */
 
 /*gallery*/
