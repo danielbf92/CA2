@@ -7,14 +7,21 @@ function openPopup(){
 function closePopup(){
     popup.classList.remove("open-popup");
 }
+
+$.validator.addMethod("customEmail", function(value, element) {
+    return this.optional(element) || /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(value);
+}, "Please enter a valid email address.");
+
 $("#myForm").validate({
 
     rules:{
         name:{
+            required: true,
             minlength: 2,
         },
         email:{
-            email:true
+            required: true,
+            customEmail:true
         }
     },
     messages: {
