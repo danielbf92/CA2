@@ -651,10 +651,8 @@ label.error {
 .Stepstobeourclient{
 	display: flex;
 	flex-wrap: wrap;
-	background-color: #fff;
 	width: 94%;
 	padding: 10px;
-	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
 	margin: 0px auto;
 }
 .overviewwedding{
@@ -670,13 +668,10 @@ label.error {
 	
 	display: flex;
 	flex-wrap: wrap;
-	background-color: #fff;
 	width: 94%;
 	padding: 10px;
-	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
 	margin: 0px auto;
-	
-    
+}
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
