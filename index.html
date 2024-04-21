@@ -53,7 +53,7 @@
         </div>
     </nav><br>
     <h2 class="titleHomePage"> WEDDING CREATIONS Co </h2>
-    <img class="imageHome" src="./images/background1.jpg">
+    <img class="imageHome" src="./images/background1.jpg" alt="background">
     <h2 class="titleHomePageSmall"> FIND OUT OUR SERVICES AND PACKAGE</h2><br>
     <div class="containerCard">
         <a href="pages/services.html">
@@ -148,13 +148,13 @@
     <script src="./js/game.js"></script>
     <!-- D&B FOOTER -->
     <script src="./js/footer.js"></script>
+    <script>
+        var toggleButton = document.getElementById('toggleButton');
+        var navList = document.getElementById('navlist');
+    
+        toggleButton.addEventListener('click', () =>{
+            navList.classList.toggle('active');
+        })
+    </script>
 </body>
-<script>
-    var toggleButton = document.getElementById('toggleButton');
-    var navList = document.getElementById('navlist');
-
-    toggleButton.addEventListener('click', () =>{
-        navList.classList.toggle('active');
-    })
-</script>
 </html>
